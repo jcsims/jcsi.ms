@@ -1,0 +1,66 @@
++++
+categories = ["znc", "upstart"]
+comments = false
+draft = false
+date = "2012-10-30T00:00:00-07:00"
+title = "Set up the ZNC IRC bouncer on Ubuntu"
+slug = "setup-znc"
+tags = []
++++
+
+I recently made use of a Late 2009 Mac Mini (MacMini3,1) as a small server machine, and 
+decided to use it as an IRC bouncer, among other things. Here’s what I did to get ZNC set 
+up and running:
+
+## Install znc
+
+    sudo apt-get install znc
+
+## Set up the znc user
+
+I did this so that a non-privileged system user would be running znc, as it doesn’t 
+need root privileges.
+
+    sudo adduser --system --home /var/lib/znc --group znc
+
+This should create the directory `/var/lib/znc`.
+
+## Configure znc
+
+Next is to configure znc using the `znc` user:
+
+    sudo -u znc /usr/bin/znc --datadir=/var/lib/znc --makeconf
+
+This will guide you through the initial options.  This would be a good time to test 
+your znc install and config, to rule out any possible issues at this stage.
+
+## Create the upstart script
+
+I used an [upstart][1] script to make sure that znc was started at boot. I created 
+the file at `/etc/init/znc.conf` with the following contents:
+
+    # znc - IRC Bouncer
+
+    description "IRC Bouncer"
+
+    start on runlevel [2345]
+
+    stop on runlevel [016]
+
+    respawn
+    respawn limit 15 5
+
+    script
+      exec sudo -u znc /usr/bin/znc --datadir=/var/lib/znc
+    end script
+
+This ensures that it’s running at all levels considered “running”, and shutdowns 
+when the system is halting.  The `respawn` line attempts to respawn the process
+if it exits incorrectly, and the limit ensures that the respawn doesn't get out
+of hand if there's an issue.
+
+At this point, you should be able to start znc if it’s not already running:
+
+    sudo start znc
+
+[1]: http://upstart.ubuntu.com

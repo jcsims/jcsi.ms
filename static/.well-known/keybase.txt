@@ -1,0 +1,65 @@
+==================================================================
+https://keybase.io/jcsims
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://jcsi.ms
+  * I am jcsims (https://keybase.io/jcsims) on keybase.
+  * I have a public key with fingerprint 49DC C0ED 3388 81FD AFD5  8BED B4E9 D919 AE23 E2E0
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "49dcc0ed338881fdafd58bedb4e9d919ae23e2e0",
+            "host": "keybase.io",
+            "key_id": "B4E9D919AE23E2E0",
+            "uid": "73388d08167d558ee92e2da9d32f9900",
+            "username": "jcsims"
+        },
+        "service": {
+            "hostname": "jcsi.ms",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1397258639,
+    "expire_in": 157680000,
+    "prev": "dd3c77bad4ef902e3876691f322df51ce1e68212bd1dfde94f622fae2a9ea665",
+    "seqno": 4,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG/MacGPG2 v2.0.22 (Darwin)
+Comment: GPGTools - https://gpgtools.org
+
+owFNkV1IFFEUx3fTttp1LQMLrEynp2hbd+583g1Et9b8oi8tt162mbl31lF3Z90d
+zQ8kBMMKzGDJwqgeyl4CJR+CjLJvAmuTojBTzCBDpITIelHojhR0Xy73f37nf865
+57wzxWK3nrr0QfUX9xdYRx7OyZaK4ubuVkrWUTPlbaVq8fKlapEQjkVjWsSgvBQL
+kaJ4MGIYURRpFUkq4kQZI5nFEEEaShgwGGAP5aKq9biZQWxkKY7dmk408ghqiKg+
+1g/3EL7QDxg/8Jt8w3JAMJ2RR6R5AXGciDEEGCAJIgaoEHqWwTiORaQwJnSNEtfC
+carNRRGtUVOw2bFZ+L+4mwAuKhrTDV3R64hYbRjRuNdMMpqjJnUCy8G/+UFZiyAy
+McloxLG4pkcoL01IxdBMQ5qBAuBEnoEuCjdFtRgOaibBCbzoIcesgxuJJUKMIgiy
+hFisQg/AjCjwPKRVBgCkcrSCacyLgAYyopGKMGRVHgCV/J4EscTzHGVOVB/RKS9L
+2pRCxDKuhSKS0RDDVNsZ6+ZUi9Vusa1cYe7MYl+z7t8mi/RVi46x7p7M6ZFj93Kb
+NqYVJBMLufbhbSBUIpV+yk/0doqzbF6qoyavcwNcaJEsx99zXS+GFneMOyxnxT5b
+1cCTfcZhJjM9Ub470ctkZDpzf2yxZZ0rz98ucqVwcvz1IVxY9PxjYuxrYv70wLO6
+WyjjSrZ1oerzRNnP65NCEue0+35PJX3fOiNHw5cD09ZeoXdpIqvyEbhQe/BxzrXB
+noAtw+dWnDe+vx1MX9vBBWcC83N9V5mp0FJ/2ZsDFSlpX5J3Ruv9omPvu66hjvSZ
+V7tK1uu/7t+0Hck6WSkOj87u5KF9pqR9uqx9f4dz4OLq7E0tDxLul3fZwNTT2+Gt
+fwA=
+=jQtm
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/jcsims
+
+==================================================================
